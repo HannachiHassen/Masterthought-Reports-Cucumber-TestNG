@@ -1,15 +1,16 @@
 package actions;
 
+import org.openqa.selenium.support.PageFactory;
+
 import locators.HomePageLocators;
+import utils.HelperClass;
 
 public class HomePageActions {
 
 HomePageLocators homePageLocators = null;
     
-    public HomePageActions() {
-         
-        this.homePageLocators = new HomePageLocators();
- 
+    public HomePageActions() {         
+        this.homePageLocators = new HomePageLocators(); 
         PageFactory.initElements(HelperClass.getDriver(),homePageLocators);
     }
   
@@ -17,5 +18,4 @@ HomePageLocators homePageLocators = null;
     public String getHomePageText() {
         return homePageLocators.homePageUserName.getText();
     }
-
 }

@@ -3,6 +3,7 @@ package actions;
 import org.openqa.selenium.support.PageFactory;
 
 import locators.LoginPageLocators;
+import utils.HelperClass;
 
 public class LoginPageActions {
 	LoginPageLocators loginPageLocators = null; 
