@@ -114,6 +114,12 @@ It is recommended to create a features folder in src/test/resources directory. C
 - LoginPageActions, HomePageActions under src/main/java/locators
 - HelperClass under src/main/java/utils
 
+# Step 9 – Create the Step Definition class or Glue Code in src/test/java
 
+It is recommended to create a definitions folder in src/test/java directory. The StepDefinition files should be created in this definitions directory. within the folder called definitions.
 
+# Step 10 – Create a TestNG Cucumber Runner class in src/test/java
 
+We need to create a class called Runner class to run the tests. This class will use the TestNG annotation @RunWith(), which tells TestNG what is the test runner class. TestRunner should be created under src/test/java within the folder called runner.
+
+AbstractTestNGCucumberTests – Runs each cucumber scenario found in the features as a separate test.
