@@ -1,25 +1,23 @@
 
 @tag
-Feature: Title of your feature
-  I want to use this template for my feature file
-
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
-
-  @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+Feature: Login to HRM Application 
+ 
+Background:
+    Given User is on HRMLogin page "https://opensource-demo.orangehrmlive.com/"
+  
+   @ValidCredentials
+   Scenario: Login with valid credentials
+        
+    When User enters username as "Admin" and password as "admin123"
+    Then User should be able to login successfully and new page open
+ 
+   @InvalidCredentials
+   Scenario Outline: Login with invalid credentials
+      
+    When User enters username as "<username>" and password as "<password>"
+    Then User should be able to see error message "<errorMessage>"
+    
+    Examples:
+   | username   | password  | errorMessage            |
+   | $$$$$      | ££££££££  | Invalid credentials     |
+   | admin      | Admin123  | Invalid credentials     | 
