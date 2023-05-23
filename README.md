@@ -108,3 +108,5 @@ Check The complete POM.xml for for the dependencies used for the project.
 
 
 It is recommended to create a features folder in src/test/resources directory. Create all the feature files in this features folder. Feature file should be saved as an extension of .feature
+
+# Step 8 – Create the test code locating the web elements in src/main/java
