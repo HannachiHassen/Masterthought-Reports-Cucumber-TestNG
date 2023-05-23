@@ -61,7 +61,8 @@ Below is the Maven project structure.
    Artifact Id – Cucumber-TestNG-Masterthought-Reports
    Version – 0.0.1-SNAPSHOT
    Package – com. Cucumber-TestNG-Masterthought-Reports
-```
+````
+
 # Step 6 – Add Selenium, TestNG, Cucumber, and Masterthought dependencies to the project
 Masterthought Dependency
 
@@ -75,7 +76,7 @@ Masterthought Dependency
 
 Masterthought Plugin
 
-```
+````
 <plugin>
         <groupId>net.masterthought</groupId>
         <artifactId>maven-cucumber-reporting</artifactId>
