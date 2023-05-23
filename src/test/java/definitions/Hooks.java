@@ -1,9 +1,21 @@
 package definitions;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import utils.HelperClass;
+
 public class Hooks {
 
-	public Hooks() {
-		// TODO Auto-generated constructor stub
-	}
+	@Before
+    public static void setUp() {
+ 
+       HelperClass.setUpDriver();
+    }
+     
+    @After
+    public static void tearDown() {
+     
+        HelperClass.tearDown();
+    }
 
 }

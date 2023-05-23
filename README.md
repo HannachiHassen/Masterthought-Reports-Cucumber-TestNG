@@ -123,3 +123,39 @@ It is recommended to create a definitions folder in src/test/java directory. The
 We need to create a class called Runner class to run the tests. This class will use the TestNG annotation @RunWith(), which tells TestNG what is the test runner class. TestRunner should be created under src/test/java within the folder called runner.
 
 AbstractTestNGCucumberTests – Runs each cucumber scenario found in the features as a separate test.
+
+# Step 11 – Create testng.xml
+
+TestNG.xml is used to run multiple tests in a single execution.
+
+# Step 12 – Run the tests from Command Line
+
+Use the below command to execute the tests.
+
+```	
+mvn clean test
+```
+# Step 13 – Cucumber Report Generation
+
+Refresh your project and check inside \target\cucumber-html-reports that the report generated with name feature-overview.
+
+There are different types of HTML reports gets generated as a part of the test execution cycle.
+
+1. feature-overview – This HTML report gives an overall overview of test execution. Main HTML report which covers all different sections like Features, Tags, Steps, and Failures.
+2. failures-overview – This HTML report gives an overview of all failed tests.
+3. step-overview – This HTML report shows step statistics for the current cycle.
+4. tag-overview – This HTML report shows passing and failing statistics for different tags used in test execution.
+
+Congratulations on making it through this tutorial and hope you found it useful! Happy Learning!! Cheers!!
+
+## Versioning
+
+For the versions available, see the [tags on this repository](https://github.com/HannachiHassen/project/tags). 
+
+## Authors
+
+* **Hassen Hannachi** - *Initial work* - [HassenHannachi](https://github.com/HannachiHassen)
+
+## License
+
+This project is not under any License - Open source 
